@@ -1,5 +1,6 @@
 .btn {
     text-decoration: none;
+    color: black;
     cursor: pointer;
-    box-sizing: 100, 100;
+    
 }
