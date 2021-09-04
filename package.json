@@ -1,16 +1,23 @@
 {
   "name": "rpgman",
-  "version": "alpha0.1",
+  "version": "alpha0.0.1",
   "description": "A RPG Manager, built to easy the RPG Management.",
   "main": "main.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "startPc": "electron ./pc/main.js",
+    "startBot": "node ./bot/bot.js"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "@discordjs/builders": "^0.5.0",
+    "@discordjs/rest": "^0.1.0-canary.0",
+    "discord": "^0.8.2",
+    "discord-api-types": "^0.22.0",
     "discord.js": "^13.1.0",
-    "electron": "^14.0.0"
+    "electron": "^14.0.0",
+    "node": "^16.6.1"
   }
 }
