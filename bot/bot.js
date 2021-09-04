@@ -1,25 +1,27 @@
+// Chamando o Discord.JS e o arquivo .json
+
 const { Client, Intents } = require('discord.js');
 const { token } = require("./config.json");
 
+// ?
 const client = new Client({ intents: [Intents.FLAGS.GUILDS] });
 
+// Avisando quando o bot ligar, dizendo: "The bot is on"
 client.once('ready', () => {
     console.log("The bot is on!");
 });
 
-
+// Respondendo alguns comandos
 client.on('interactionCreate', async interaction => {
 	if (!interaction.isCommand()) return;
 
 	const { commandName } = interaction;
 
-	if (commandName === '!bot') {
+	if (commandName === 'ping') {
 		await interaction.reply('Pong!');
-		await console.log("The bot has sayed: \"Pong!\"");
-	} else if (commandName === 'server') {
-		await interaction.reply('Server info.');
-	} else if (commandName === 'user') {
-		await interaction.reply('User info.');
+		await console.log("Log: The bot has said: \"Pong!\"");
+	} else if (commandName === 'beep') {
+		await interaction.reply('Boop!');
 	}
 });
 
