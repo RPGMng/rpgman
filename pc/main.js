@@ -27,7 +27,7 @@ app.whenReady().then(() => {
     })
 })
 
-// Fecha o app ao fechar todas as janelas se o sistema for Linux ou Windows
+// Fecha o app ao fechar todas as janelas se o sistema for MacOS
 app.on('close-all-windows', () => {
     if (process.plataform !== 'darwin') app.quit()  
 })
