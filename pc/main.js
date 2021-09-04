@@ -10,11 +10,11 @@ function createWindow () {
         webPreferences : {
             // path.join - junta pedaços de diretórios | __dirname - o diretório em que o script está
             // sendo executado
-            preload: path.join(__dirname, 'preload.js') 
+            preload: path.join(__dirname, '/paginas/preload.js') 
         }
     })
 
-    window.loadFile(path.join(__dirname, 'index.html'))
+    window.loadFile(path.join(__dirname, '/paginas/index.html'))
 }
 
 
