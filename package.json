@@ -2,7 +2,7 @@
   "name": "rpgman",
   "version": "alpha0.0.1",
   "description": "A RPG Manager, built to easy the RPG Management.",
-  "main": "main.js",
+  "main": "./pc/main.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "startPc": "electron ./pc/main.js",
