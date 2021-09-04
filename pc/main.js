@@ -14,8 +14,7 @@ function createWindow () {
         }
     })
 
-    window.loadFile('index.html') // Não sei se precisa usar o path.join aqui, mas vamo ver no que dá.clear
-    
+    window.loadFile(path.join(__dirname, 'index.html'))
 }
 
 
